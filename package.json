@@ -1,0 +1,11 @@
+{
+  "name": "Calm",
+  "version": "1.0.0",
+  "main": "index.ja",
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  },
+  "dependencies": {
+    "sass": "^1.85.0"
+  }
+}
