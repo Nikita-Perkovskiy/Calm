@@ -1,0 +1,36 @@
+@mixin main-text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+@mixin main-subtitle {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+@mixin main-comment {
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+@mixin nav-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin card-text {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: var(--color-black);
+}

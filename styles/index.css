@@ -133,8 +133,89 @@ table {
   text-decoration: none;
 }
 
-p {
-  color: "#fff";
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/PoppinsBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../../fonts/PoppinsRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../../fonts/PoppinsMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Poppins Thin";
+  src: url("../../fonts/PoppinsThin.woff2") format("woff2");
+  font-weight: 250;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("../../fonts/PoppinsSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+@font-face {
+  font-family: "Poppins ExtraBold";
+  src: url("../../fonts/PoppinsExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-2212;
+}
+:root {
+  --color-black: #353732;
+  --color-white: #fafafa;
+  --font-family-base: "Poppins", "sans-serif";
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.header__nav__title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main__container {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-inline: auto;
+  padding: 10px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /*# sourceMappingURL=index.css.map */

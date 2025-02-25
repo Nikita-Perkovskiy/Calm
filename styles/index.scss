@@ -1,7 +1,6 @@
 @use "./reset/reset.scss";
 @use "./fonts/fonts.scss";
 @use "./variables/variables.scss";
-
-p {
-  color: "#fff";
-}
+@use "./blocks/header/header.scss";
+@use "./helpers/mixins.scss";
+@use "./blocks/containers/main-container.scss";
