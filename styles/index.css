@@ -184,6 +184,7 @@ table {
 :root {
   --color-black: #353732;
   --color-white: #fafafa;
+  --color-gray: #808080;
   --font-family-base: "Poppins", "sans-serif";
   --borderRadius: 1em;
 }
@@ -299,13 +300,123 @@ table {
     display: block;
   }
 }
-.main__container {
-  overflow: hidden;
+.body__container {
+  overflow: auto;
   box-sizing: border-box;
   margin-inline: auto;
   padding: 10px;
   width: 100%;
   max-width: 1200px;
+}
+
+.main__container {
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-inline: auto;
+  max-width: 700px;
+  width: 100%;
+}
+
+.main-slogan__wrapper {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.main-slogan__text {
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-black);
+}
+
+.cards-block__wrapper {
+  margin-top: 120px;
+}
+
+.cards-block__card__box {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.cards-block__category {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-transform: uppercase;
+}
+
+.cards-block__image {
+  width: 100%;
+}
+.cards-block__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cards-block__text {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.cards-block__name {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.cards-block__date {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.cards-block__card__wrapper {
+  margin-inline: auto;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100%;
+}
+
+.cards-block__horizontal {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+
+.cards-block__vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .cards-block__horizontal {
+    flex-wrap: wrap;
+  }
+  .cards-block__vertical {
+    width: 100%;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
