@@ -1,0 +1,34 @@
+@use "../../helpers/mixins.scss" as *;
+
+.footer__wrapper {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer__icon {
+  cursor: pointer;
+}
+
+.footer__text {
+  @include main-text;
+  padding-right: 30px;
+}
+
+.footer__nav__title {
+  @include nav-title;
+  color: var(--color-gray);
+  padding-right: 15px;
+}
+
+.footer__line__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

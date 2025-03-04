@@ -1,0 +1,76 @@
+@use "../../helpers/mixins.scss" as *;
+
+.post-block__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 60px;
+  article {
+    width: 100%;
+  }
+}
+
+.post-block__post__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.post-block__post__date {
+  @include card-text;
+}
+
+.post-block__post__title {
+  @include card-name;
+}
+
+.post-block__post__text {
+  @include main-text;
+}
+
+.post-block__post__text__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  gap: 10px;
+}
+
+.post-block__post__image {
+  width: 100%;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+.post-block__arrow__wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+  div {
+    cursor: pointer;
+  }
+}
+
+.post-block__arrow__text {
+  @include card-name;
+}
+
+@media (max-width: 768px) {
+  .post-block__post__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

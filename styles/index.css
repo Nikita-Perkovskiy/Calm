@@ -505,5 +505,131 @@ table {
     width: 100%;
   }
 }
+.post-block__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 60px;
+}
+.post-block__wrapper article {
+  width: 100%;
+}
+
+.post-block__post__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.post-block__post__date {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.post-block__post__title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.post-block__post__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.post-block__post__text__box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  gap: 10px;
+}
+
+.post-block__post__image {
+  width: 100%;
+  border-radius: 10px;
+}
+.post-block__post__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-block__arrow__wrapper {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+.post-block__arrow__wrapper div {
+  cursor: pointer;
+}
+
+.post-block__arrow__text {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+@media (max-width: 768px) {
+  .post-block__post__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.footer__wrapper {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer__icon {
+  cursor: pointer;
+}
+
+.footer__text {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  color: var(--color-black);
+  padding-right: 30px;
+}
+
+.footer__nav__title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: var(--color-black);
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--color-gray);
+  padding-right: 15px;
+}
+
+.footer__line__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
 
 /*# sourceMappingURL=index.css.map */
